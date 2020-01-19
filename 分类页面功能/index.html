@@ -1,0 +1,686 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: 钟建坤
+ * @Date: 2019-12-06 10:50:44
+ * @LastEditors  : 钟建坤
+ * @LastEditTime : 2020-01-17 10:18:14
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./js/jquery-1.7.2.min.js"></script>
+   <style>
+   .search{
+  
+  padding-top: 10px;
+   display: flex;
+   position: fixed;
+   width: 100%;
+   justify-content: center;
+   border-radius: 4px;
+}
+.search_zjk{
+   display: flex;
+   width: 90%;
+   background: #F6F6F6;
+   
+border-style:none;
+}
+.search-img {
+   width: 86%;
+}
+input:focus {    outline:none;}
+.search-img input{
+   width: 75%;
+   height: 22px;
+   line-height: 22px;
+   margin: 8px 0;
+   padding: 0 15px;
+   border: none;
+   background: inherit;
+   /* color: #999; */
+   touch-action: manipulation;
+
+}
+.magnifying{
+   display: flex;
+   border: 0px;
+   /* width: 26%; */
+   font-size: 15px;
+   height: 29px;
+   border-radius: 3px;
+   -webkit-appearance: none;
+   outline: none;
+   /* background: red; */
+   color: #fff;
+   line-height: 26px;
+   margin: 5px 9px;
+   text-align: center;
+}
+.magnifying-img{
+   margin-top: 3px;
+   border-left: 1px solid #dfdfdf;
+   padding-left: 10px;
+
+}
+.magnifying-img img{
+   width: 25px;
+}
+.m-text{
+   text-align: center;
+   width: 50%;
+   line-height: 30px;
+}
+.cation .cation-wrap{
+    margin-top: 35px;
+}
+   </style>
+</head>
+
+<body>
+    <div class="search">
+        <div class="search_zjk">
+            <div class="search-img">
+                <input type="text" placeholder="请输入搜索内容">
+            </div>
+            <div class="magnifying">
+                <div class="magnifying-img">
+                    <img src="./image/搜索.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="production">
+
+        <div class="left-sidebar">
+            <div class="l-s-item" >
+                热销
+            </div>
+            <div class="l-s-item" >
+                美食
+            </div>
+            <div class="l-s-item">
+                内衣
+            </div>
+            <div class="l-s-item" >
+                美妆
+            </div>
+            <div class="l-s-item" >
+                家居
+            </div>
+            <div class="l-s-item" >
+                配饰
+            </div>
+            <div class="l-s-item">
+                家纺
+            </div>
+            <div class="l-s-item" >
+                童装
+            </div>
+            <div class="l-s-item" >
+                服装
+            </div>
+            <div class="l-s-item" >
+                个护
+            </div>
+            <div class="l-s-item" >
+                test
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="product-right-wrap ">
+                <h1>—— 热销 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/389">
+                            <img src="./image/abed664295b0b5902a0a27e8e20cedbe.jpg" alt="">
+                            <h2>獭兔毛加厚保暖皮草围巾脖</h2>
+                            <p>￥59.00</p>
+                        </a><a href="/product/detail/id/373">
+                            <img src="./image/aa04a6d465f766c4d191ea45692306fa.jpg" alt="">
+                            <h2>乳木果润肤衣男款</h2>
+                            <p>￥79.00</p>
+                        </a><a href="/product/detail/id/372">
+                            <img src="./image/0d4583faac906021ce23bed5ca8060da.jpg" alt="">
+                            <h2>乳木果润肤衣女款</h2>
+                            <p>￥69.00</p>
+                        </a><a href="/product/detail/id/371">
+                            <img src="./image/8ef911be55809acb08f2b89b17d8c77b.jpg" alt="">
+                            <h2>自然节拍超柔洗脸巾3袋</h2>
+                            <p>￥29.9</p>
+                        </a><a href="/product/detail/id/369">
+                            <img src="./image/383b1503df07518b8e199108b135b075.jpg" alt="">
+                            <h2>临安山核桃仁250g分两灌装</h2>
+                            <p>￥29.90</p>
+                        </a><a href="/product/detail/id/367">
+                            <img src="./image/7b735ee71c9b93104c632ca0b5948c5f.jpg" alt="">
+                            <h2>冬季韩版爱心女式棉鞋</h2>
+                            <p>￥19.00</p>
+                        </a>
+                        <!-- <a href="/product/detail/id/272">
+                            <img src="./image/c5ec8a2b1f6c1e4439bd5823c7071dcc.jpg" alt="">
+                            <h2>爱敬(age20s)气垫bb霜12.5g 象牙白经典款无替换芯</h2>
+                            <p>￥99.00</p>
+                        </a>  -->
+                    </div>
+                </div>
+            </div>
+            <div class="product-right-wrap ">
+                <h1>—— 美食 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/387">
+                            <img src="./image/44dab8de9b44a2cff5c78bbf7ae92539.jpg" alt="">
+                            <h2>正宗赣南脐橙10斤装（产地直发）</h2>
+                            <p>￥59.90</p>
+                        </a><a href="/product/detail/id/370">
+                            <img src="./image/9e791b65b4de6767e50d6126b9f5b36b.jpg" alt="">
+                            <h2>夏威夷果500g分2罐装</h2>
+                            <p>￥39.9</p>
+                        </a><a href="/product/detail/id/368">
+                            <img src="./image/39328fa665ea35ebedcdb385aedb1bc3.jpg" alt="">
+                            <h2>临安山核桃500g分两罐装</h2>
+                            <p>￥59.00</p>
+                        </a><a href="/product/detail/id/258">
+                            <img src="./image/38c8916c7982d47b43e3d0c60aceab9b.jpg" alt="">
+                            <h2>四海龙宫香辣大虾</h2>
+                            <p>￥45.00</p>
+                        </a><a href="/product/detail/id/257">
+                            <img src="./image/cacf9bb2d0f2c8b905b7f65059917c4a.jpg" alt="">
+                            <h2>四海龙宫皮皮虾</h2>
+                            <p>￥45.00</p>
+                        </a><a href="/product/detail/id/256">
+                            <img src="./image/45e82a37e3961ee437c04e1db57690a6.jpg" alt="">
+                            <h2>四海龙宫东海墨鱼仔260g</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/255">
+                            <img src="./image/1b9a7c29213b36f9f0aba76f9fe071ee.jpg" alt="">
+                            <h2>四海龙宫私房八爪鱼260g</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/254">
+                            <img src="./image/c758df8be786a9064c6e299ba6ff24e5.jpg" alt="">
+                            <h2>四海龙宫香辣花螺260g</h2>
+                            <p>￥69.00</p>
+                        </a><a href="/product/detail/id/253">
+                            <img src="./image/a41fb3abf6726861f7ce9f6974338a1f.jpg" alt="">
+                            <h2>四海龙宫香辣鲍鱼200g</h2>
+                            <p>￥69.00</p>
+                        </a> </div>
+                </div>
+            </div>
+            <div class="product-right-wrap ">
+                <h1>—— 内衣 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/365">
+                            <img src="./image/0b8fa139db9bfb156defce2761eafcd3.jpg" alt="">
+                            <h2>竖条纹连裤袜</h2>
+                            <p>￥29.00</p>
+                        </a><a href="/product/detail/id/364">
+                            <img src="./image/d3a402d0f67fa6771e88254f8d0f212f.jpg" alt="">
+                            <h2>网红一体透肤裤</h2>
+                            <p>￥39.00</p>
+                        </a><a href="/product/detail/id/362">
+                            <img src="./image/bdd8069b6be8b0a0e3d853afc9ff2692.jpg" alt="">
+                            <h2>双层光腿神器连裤袜</h2>
+                            <p>￥39.00</p>
+                        </a><a href="/product/detail/id/358">
+                            <img src="./image/f04a027a36fa57165eb7d6d5b0820992.jpg" alt="">
+                            <h2>光腿神器连裤袜</h2>
+                            <p>￥29.00</p>
+                        </a> </div>
+                </div>
+            </div>
+            <div class="product-right-wrap ">
+                <h1>—— 美妆 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/397">
+                            <img src="./image/a0cb48644b26f2cffad1f4437bf519eb.jpg" alt="">
+                            <h2>澳洲cemoy21天极光晚安精华液</h2>
+                            <p>￥189.00</p>
+                        </a><a href="/product/detail/id/346">
+                            <img src="./image/6b8e15770a5d2bf1e104ac68b22e086f.jpg" alt="">
+                            <h2>kissme奇士美防水眼线笔</h2>
+                            <p>￥79.00</p>
+                        </a><a href="/product/detail/id/336">
+                            <img src="./image/3884bd2eb8106c7f75581216f369c806.jpg" alt="">
+                            <h2>城野医生毛孔收敛水</h2>
+                            <p>￥99.00</p>
+                        </a><a href="/product/detail/id/335">
+                            <img src="./image/63f2b0a4ab70c152115186526985348a.jpg" alt="">
+                            <h2>李佳琦同款逐本十效植物卸妆油</h2>
+                            <p>￥139.00</p>
+                        </a><a href="/product/detail/id/325">
+                            <img src="./image/1119ae2300f16e7b153632789ee87aed.jpg" alt="">
+                            <h2>澳芝曼山羊奶蜂蜜嫩肤霜250g</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/324">
+                            <img src="./image/aada6c186cdbddc75460161975dd7054.jpg" alt="">
+                            <h2>澳芝曼绵羊脂滋润维E霜250g</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/321">
+                            <img src="./image/79c38bfbf8dc7363fd89c26b9de7df59.jpg" alt="">
+                            <h2>G&amp;M 澳芝曼鸸鹋油润肤霜面霜250g</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/316">
+                            <img src="./image/86cc6207949f6430b8b3f3339dbe7409.jpg" alt="">
+                            <h2>SHANGPREE 香蒲丽 海洋水光眼膜贴60片</h2>
+                            <p>￥119.00</p>
+                        </a><a href="/product/detail/id/310">
+                            <img src="./image/baea9237761426505b9670f27ebaced1.jpg" alt="">
+                            <h2>李佳琦同款UNNY悠宜净透水润洁面乳</h2>
+                            <p>￥69.00</p>
+                        </a><a href="/product/detail/id/297">
+                            <img src="./image/d8723540349674fc8c8ddb5ac0a3bb03.jpg" alt="">
+                            <h2>kosrela省水化妆棉</h2>
+                            <p>￥25.00</p>
+                        </a><a href="/product/detail/id/283">
+                            <img src="./image/bdbc99ffe6ff55b1462670d6cbc71fdd.jpg" alt="">
+                            <h2>李佳琦同款Coréana 高丽雅娜 斯谛魅营养弹力眼霜 30毫升</h2>
+                            <p>￥109.00</p>
+                        </a> </div>
+                </div>
+            </div>
+            <div class="product-right-wrap ">
+                <div class="">
+                    <div class="product-right-wrap">
+                        <h1>—— 家居 ——</h1>
+                        <div class="product-ul">
+                            <div class="product-a">
+
+                                <a href="/product/detail/id/388">
+                                    <img src="./image/b4033a504e0e86406bc5da35a13b37e5.jpg" alt="">
+                                    <h2>不锈钢朗赫魔力营养锅</h2>
+                                    <p>￥399.00</p>
+                                </a><a href="/product/detail/id/292">
+                                    <img src="./image/fde6c21ef41febd8a667922912c8c2eb.jpg" alt="">
+                                    <h2>ECX夹夹乐早餐机</h2>
+                                    <p>￥259.00</p>
+                                </a><a href="/product/detail/id/288">
+                                    <img src="./image/e3aba7da94a8cc6ba213bc46ec7e9321.jpg" alt="">
+                                    <h2>ECX榨汁机</h2>
+                                    <p>￥259.00</p>
+                                </a><a href="/product/detail/id/263">
+                                    <img src="./image/e927d6cbc06dc8656aaca9c68bda04e6.jpg" alt="">
+                                    <h2>莱迪可爱风家居拖鞋</h2>
+                                    <p>￥39.00</p>
+                                </a><a href="/product/detail/id/262">
+                                    <img src="./image/4a3d2c7968fed096adfb433359984b59.jpg" alt="">
+                                    <h2>日式蝴蝶结家居拖鞋</h2>
+                                    <p>￥39.00</p>
+                                </a><a href="/product/detail/id/261">
+                                    <img src="./image/3b111c900e79935b5429684411497234.jpg" alt="">
+                                    <h2>唐小艺雕染包口拖鞋</h2>
+                                    <p>￥39.00</p>
+                                </a><a href="/product/detail/id/259">
+                                    <img src="./image/d53cacbfcf930deb606805b8a741c00e.jpg" alt="">
+                                    <h2>小流苏蝴蝶结家居拖鞋</h2>
+                                    <p>￥39.00</p>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-right-wrap ">
+                <h1>—— 配饰 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/329">
+                            <img src="./image/359646a2e8f524d543dcf6904b341bd3.jpg" alt="">
+                            <h2>APM Monaco正品纯银镶晶钻不对称粉色兔子耳环</h2>
+                            <p>￥999.00</p>
+                        </a><a href="/product/detail/id/328">
+                            <img src="./image/558746ac54ba4bf6ee79b932aae8e44c.jpg" alt="">
+                            <h2>APM MONACO正品925银镀18k金镶嵌晶钻小眼睛耳钉</h2>
+                            <p>￥459.00</p>
+                        </a><a href="/product/detail/id/327">
+                            <img src="./image/f4ce0282ca7a76a32bfcfbc10af49166.jpg" alt="">
+                            <h2>APM MONACO 光韵吊坠项链</h2>
+                            <p>￥999.00</p>
+                        </a><a href="/product/detail/id/326">
+                            <img src="./image/800635065aec3b86e72d42952e2a1923.jpg" alt="">
+                            <h2>APM MONACO 925银镶嵌薄荷绿晶钻圆盘小流苏项链</h2>
+                            <p>￥1399.00</p>
+                        </a><a href="/product/detail/id/320">
+                            <img src="./image/9e48a36e92e9ec1bd56905905f18b348.jpg" alt="">
+                            <h2>Swarovski施华洛世奇雪花项链</h2>
+                            <p>￥599.00</p>
+                        </a><a href="/product/detail/id/317">
+                            <img src="./image/ebdfef424310090f00bc35db4ce2a3a6.jpg" alt="">
+                            <h2>APM Monaco彩虹项链</h2>
+                            <p>￥999.00</p>
+                        </a><a href="/product/detail/id/314">
+                            <img src="./image/17dbe46a571f73cfb93e47444341d6a7.jpg" alt="">
+                            <h2>APM MONACO仙人掌耳环女新款耳线</h2>
+                            <p>￥599.00</p>
+                        </a><a href="/product/detail/id/309">
+                            <img src="./image/ba33fdd883828227e428aed1f07ef6f3.jpg" alt="">
+                            <h2>Swarovski施华洛世奇恶魔之眼项链</h2>
+                            <p>￥489.00</p>
+                        </a><a href="/product/detail/id/308">
+                            <img src="./image/0440e78e617c9e7a4cee262d5df40029.jpg" alt="">
+                            <h2>APM Monaco金黄色银镶晶钻不对称仙人掌耳环</h2>
+                            <p>￥899.00</p>
+                        </a><a href="/product/detail/id/305">
+                            <img src="./image/908ed4303548c263970bf45712b6db13.jpg" alt="">
+                            <h2>Swarovski施华洛世奇O形跳动</h2>
+                            <p>￥699.00</p>
+                        </a><a href="/product/detail/id/299">
+                            <img src="./image/02bcb95fbd86b46e4a2b630a4f70ad11.jpg" alt="">
+                            <h2>APM Monaco金黄色晶钻珍珠耳环</h2>
+                            <p>￥799.00</p>
+                        </a><a href="/product/detail/id/298">
+                            <img src="./image/6063c59a54be1e22d727e069e8a6270d.jpg" alt="">
+                            <h2>APM Monaco纯银镶晶钻Z字形链条耳环</h2>
+                            <p>￥599.00</p>
+                        </a><a href="/product/detail/id/290">
+                            <img src="./image/acf84fe81bcafab4fb6a07e1422be088.jpg" alt="">
+                            <h2>APM Monaco金黄色不对称耳环 彩虹耳坠气质时尚耳饰银饰</h2>
+                            <p>￥999.00</p>
+                        </a><a href="/product/detail/id/286">
+                            <img src="./image/0e7c251d87ff5f67ce7ce6b0ed473160.jpg" alt="">
+                            <h2>APM Monaco鳄鱼项链轻奢项链</h2>
+                            <p>￥559.00</p>
+                        </a><a href="/product/detail/id/280">
+                            <img src="./image/46e8d26684927182aa8b2eafcc524a97.jpg" alt="">
+                            <h2>APM Monaco单只金色恶魔之眼眼睛搭配月亮爱心多层耳环</h2>
+                            <p>￥599.00</p>
+                        </a><a href="/product/detail/id/277">
+                            <img src="./image/6cd08090abf300fd044f6fc5b2d8e5fd.jpg" alt="">
+                            <h2>APM MONACO纯银长方形钻简约耳环</h2>
+                            <p>￥799.00</p>
+                        </a> </div>
+                </div>
+            </div>
+            <div class="product-right-wrap ">
+                <h1>—— 家纺 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/395">
+                            <img src="./image/6514b03a411ec34b056992a698dc94de.jpg" alt="">
+                            <h2>日本笑脸PE调节枕</h2>
+                            <p>￥179.00</p>
+                        </a><a href="/product/detail/id/394">
+                            <img src="./image/ef5445e89a279c66a77510813b07b1d7.jpg" alt="">
+                            <h2>水晶绒四件套</h2>
+                            <p>￥199.00</p>
+                        </a><a href="/product/detail/id/393">
+                            <img src="./image/7c8d1d98ae093b6a17e8bca5900d6d46.jpg" alt="">
+                            <h2>天丝玻尿酸养颜被</h2>
+                            <p>￥399.00</p>
+                        </a><a href="/product/detail/id/392">
+                            <img src="./image/0c53a2d06216e5660906add482066670.jpg" alt="">
+                            <h2>全棉大豆冬被</h2>
+                            <p>￥299.00</p>
+                        </a><a href="/product/detail/id/386">
+                            <img src="./image/e422a4be8d34e2131a66d7625f9a0cb6.jpg" alt="">
+                            <h2>高档牛奶绒四件套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/385">
+                            <img src="./image/319866d542b9198ede06966580d62ee1.jpg" alt="">
+                            <h2>高档牛奶绒四件套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/375">
+                            <img src="./image/21e9ea1fc1e44278d71e21801ccb367e.jpg" alt="">
+                            <h2>【MUJI️印良品】色织水洗四件套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/374">
+                            <img src="./image/3353e4096f129ce3a7336aec2fc46aa1.jpg" alt="">
+                            <h2>【MUJI️印良品】色织水洗四件套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/268">
+                            <img src="./image/9872b20262ec9a0f6b240b33ac953629.jpg" alt="">
+                            <h2>‌无印良‌品全棉加绒‌四件‌套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/267">
+                            <img src="./image/6732cb5529cd5959b4aab662eb44ae13.jpg" alt="">
+                            <h2>无印良‌品全棉加绒‌四件‌套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/266">
+                            <img src="./image/8b53a00335b635f6c01a1cf27d695a63.jpg" alt="">
+                            <h2>加拿大鹅-蚕丝被【重达‎八‎斤】</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/265">
+                            <img src="./image/d42436b4b7df4d11b7a2c065a16e5fd5.jpg" alt="">
+                            <h2>加拿大鹅-蚕丝被(重达8斤）</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/252">
+                            <img src="./image/13587d8e761856c5e9eadce9039bf700.jpg" alt="">
+                            <h2>成人乳胶枕</h2>
+                            <p>￥99.00</p>
+                        </a><a href="/product/detail/id/245">
+                            <img src="./image/c0d7e0847b9fe5dd19b6f617a8ddd71a.JPG" alt="">
+                            <h2>儿童乳胶枕</h2>
+                            <p>￥99.00</p>
+                        </a> </div>
+                </div>
+            </div>
+
+            <div class="product-right-wrap">
+                <div class="">
+                    <div class="product-right-wrap">
+                        <h1>—— 童装 ——</h1>
+                        <div class="product-ul">
+                            <div class="product-a">
+
+                                <a href="/product/detail/id/384">
+                                    <img src="./image/7b0c4757d9dee7202a8380b1199a4c94.jpg" alt="">
+                                    <h2>Tommy男童棉服</h2>
+                                    <p>￥199.00</p>
+                                </a><a href="/product/detail/id/383">
+                                    <img src="./image/c0008ce214a676aab3d4170f3faff793.jpg" alt="">
+                                    <h2>女童套头卫衣</h2>
+                                    <p>￥39.00</p>
+                                </a><a href="/product/detail/id/380">
+                                    <img src="./image/6afb0b88bc3628ecd5e28f881db2247d.jpg" alt="">
+                                    <h2>男童长裤</h2>
+                                    <p>￥39.00</p>
+                                </a><a href="/product/detail/id/379">
+                                    <img src="./image/632e3a857a6fd3a4b62b2f1e9eab6779.jpg" alt="">
+                                    <h2>辛巴娜娜男童羽绒服</h2>
+                                    <p>￥299.00</p>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-right-wrap ">
+                <h1>—— 服装 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/391">
+                            <img src="./image/61028a29b01bb6418191816cdb49a665.jpg" alt="">
+                            <h2>冠军羊羔毛卫衣</h2>
+                            <p>￥168.00</p>
+                        </a><a href="/product/detail/id/390">
+                            <img src="./image/a3a8cbd4fafdff4bec9cfc660e098b21.jpg" alt="">
+                            <h2>PUMA彪马纯色夹棉羊羔毛外套</h2>
+                            <p>￥259.00</p>
+                        </a><a href="/product/detail/id/382">
+                            <img src="./image/b52da0ae2ec97968b7936bc2d145fe52.jpg" alt="">
+                            <h2>Nike耐克拼接情侣款中长款棉衣</h2>
+                            <p>￥359.00</p>
+                        </a><a href="/product/detail/id/381">
+                            <img src="./image/d0ddd6a527a151fb9c06125830eb47a8.jpg" alt="">
+                            <h2>M*B带帽加绒卫衣 男女同款</h2>
+                            <p>￥159.00</p>
+                        </a><a href="/product/detail/id/378">
+                            <img src="./image/e10b6c3590724a72041cc59fbe475c20.jpg" alt="">
+                            <h2>特价：NY洋基队针织加绒圆领卫衣 男女同款</h2>
+                            <p>￥99</p>
+                        </a><a href="/product/detail/id/377">
+                            <img src="./image/758b098afa00859c3e0e93f4ccde9e4d.jpg" alt="">
+                            <h2>北面supreme联名款银角大王亮面羽绒服</h2>
+                            <p>￥599.00</p>
+                        </a><a href="/product/detail/id/376">
+                            <img src="./image/83c52d7f69bf1322fcbe35af49c414e8.jpg" alt="">
+                            <h2>MLB棒球服棉服</h2>
+                            <p>￥239.00</p>
+                        </a><a href="/product/detail/id/366">
+                            <img src="./image/9a6f73cce5ca6586cdd20e1347cba5b4.jpg" alt="">
+                            <h2>修身打底衫</h2>
+                            <p>￥49.00</p>
+                        </a> </div>
+                </div>
+            </div>
+
+            <div class="product-right-wrap ">
+                <h1>—— 个护 ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/343">
+                            <img src="./image/14f0c55a37f1986aedef760225869572.jpg" alt="">
+                            <h2>美丽艾拉 粉椰子奶盖沐浴露</h2>
+                            <p>￥99.00</p>
+                        </a><a href="/product/detail/id/342">
+                            <img src="./image/9e16932ea3983a6a4abfa760121787cd.jpg" alt="">
+                            <h2>韩国玛咖珑洗发水护发素套装</h2>
+                            <p>￥179.00</p>
+                        </a><a href="/product/detail/id/318">
+                            <img src="./image/80ac3bf9c56f9f3b05d94615e2e1dc8e.jpg" alt="">
+                            <h2>艾优电动牙刷皮卡丘儿童</h2>
+                            <p>￥369.00</p>
+                        </a><a href="/product/detail/id/313">
+                            <img src="./image/8d1001ce25ca75d9ccdd73a48fec787f.jpg" alt="">
+                            <h2>艾优电动牙刷sup款黑红</h2>
+                            <p>￥299.00</p>
+                        </a><a href="/product/detail/id/311">
+                            <img src="./image/0a41fa4e40ee40c0323408e0e1ff09d6.jpg" alt="">
+                            <h2>somill 韩国索迷电动超声波硅胶洁面仪</h2>
+                            <p>￥198.00</p>
+                        </a><a href="/product/detail/id/306">
+                            <img src="./image/1d85873577404211de7e04dd07a4c408.jpg" alt="">
+                            <h2>4支装狮王山切型细毛牙刷 4色随机发货</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/304">
+                            <img src="./image/8ad8c158cdbd9481d0dc5b3e97fc2df3.jpg" alt="">
+                            <h2>狮王酵素美白牙膏日本进口温和薄荷味 黄条130g</h2>
+                            <p>￥29.00</p>
+                        </a><a href="/product/detail/id/302">
+                            <img src="./image/11e1da0ad749892c414742edb07fd3bb.jpg" alt="">
+                            <h2>狮王酵素美白牙膏日本进口超爽薄荷味 蓝条130g</h2>
+                            <p>￥29.00</p>
+                        </a><a href="/product/detail/id/301">
+                            <img src="./image/fccb6c1e58c2073893fd7b6da3f23c00.jpg" alt="">
+                            <h2>日本狮王山切型 齿间细毛牙刷(中头/普通毛) 4色随机</h2>
+                            <p>￥19.00</p>
+                        </a><a href="/product/detail/id/291">
+                            <img src="./image/767439760d7269c37bbf0dcd2f72184b.jpg" alt="">
+                            <h2>日本牧小苫纯棉洁面巾洗脸巾</h2>
+                            <p>￥29.00</p>
+                        </a> </div>
+                </div>
+            </div>
+
+            <div class="product-right-wrap ">
+                <h1>—— test ——</h1>
+                <div class="product-ul">
+                    <div class="product-a">
+
+                        <a href="/product/detail/id/343">
+                            <img src="./image/14f0c55a37f1986aedef760225869572.jpg" alt="">
+                            <h2>美丽艾拉 粉椰子奶盖沐浴露</h2>
+                            <p>￥99.00</p>
+                        </a><a href="/product/detail/id/342">
+                            <img src="./image/9e16932ea3983a6a4abfa760121787cd.jpg" alt="">
+                            <h2>韩国玛咖珑洗发水护发素套装</h2>
+                            <p>￥179.00</p>
+                        </a><a href="/product/detail/id/318">
+                            <img src="./image/80ac3bf9c56f9f3b05d94615e2e1dc8e.jpg" alt="">
+                            <h2>艾优电动牙刷皮卡丘儿童</h2>
+                            <p>￥369.00</p>
+                        </a><a href="/product/detail/id/313">
+                            <img src="./image/8d1001ce25ca75d9ccdd73a48fec787f.jpg" alt="">
+                            <h2>艾优电动牙刷sup款黑红</h2>
+                            <p>￥299.00</p>
+                        </a><a href="/product/detail/id/311">
+                            <img src="./image/0a41fa4e40ee40c0323408e0e1ff09d6.jpg" alt="">
+                            <h2>somill 韩国索迷电动超声波硅胶洁面仪</h2>
+                            <p>￥198.00</p>
+                        </a><a href="/product/detail/id/306">
+                            <img src="./image/1d85873577404211de7e04dd07a4c408.jpg" alt="">
+                            <h2>4支装狮王山切型细毛牙刷 4色随机发货</h2>
+                            <p>￥49.00</p>
+                        </a><a href="/product/detail/id/304">
+                            <img src="./image/8ad8c158cdbd9481d0dc5b3e97fc2df3.jpg" alt="">
+                            <h2>狮王酵素美白牙膏日本进口温和薄荷味 黄条130g</h2>
+                            <p>￥29.00</p>
+                        </a><a href="/product/detail/id/302">
+                            <img src="./image/11e1da0ad749892c414742edb07fd3bb.jpg" alt="">
+                            <h2>狮王酵素美白牙膏日本进口超爽薄荷味 蓝条130g</h2>
+                            <p>￥29.00</p>
+                        </a><a href="/product/detail/id/301">
+                            <img src="./image/fccb6c1e58c2073893fd7b6da3f23c00.jpg" alt="">
+                            <h2>日本狮王山切型 齿间细毛牙刷(中头/普通毛) 4色随机</h2>
+                            <p>￥19.00</p>
+                        </a><a href="/product/detail/id/291">
+                            <img src="./image/767439760d7269c37bbf0dcd2f72184b.jpg" alt="">
+                            <h2>日本牧小苫纯棉洁面巾洗脸巾</h2>
+                            <p>￥29.00</p>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer class="index-footer">
+        <ul>
+            <a href="../首页/index.html" >
+                <li>
+                    <img src="./image/footer_icon1.png" alt="">
+                    <p>首页</p>
+                </li>
+            </a>
+            <a href="../分类页面功能/index.html" class="on">
+                <li>
+                    <img src="./image/footer_icon2_2.png" alt="">
+                    <p>分类</p>
+                </li>
+            </a>
+            <a href="../shopping_cart/index.html">
+                <li>
+                    <img src="./image/footer_icon3.png" alt="">
+                    <p>购物车</p>
+                </li>
+            </a>
+            <a href="../个人中心/index.html">
+                <li>
+                    <img src="./image/footer_icon4.png" alt="">
+                    <p>个人中心</p>
+                </li>
+            </a>
+        </ul>
+    </footer>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/index.js"></script>
+ 
+</body>
+
+</html>

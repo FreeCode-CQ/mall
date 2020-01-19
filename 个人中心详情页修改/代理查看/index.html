@@ -1,0 +1,98 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: 钟建坤
+ * @Date: 2020-01-10 11:17:29
+ * @LastEditors  : 钟建坤
+ * @LastEditTime : 2020-01-14 10:28:11
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+
+    </style>
+    <script>
+     var fun = function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+
+            //这里是假设在640px宽度设计稿的情况下，1rem = 20px；
+            //可以根据实际需要修改
+            docEl.style.fontSize = 20 * (clientWidth / 800) + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+}
+fun(document, window);
+
+    </script>
+</head>
+<body style="background: #EDEDED;height: 1000px;">
+    <div class="title" >
+        <a href="javascript:history.go(-1)">
+        <div class="arrow_right">
+            <img src="../images/arrow_right_2.png" alt="">
+        </div>
+        </a>
+        
+        <div class="title_name">
+            代理查看
+        </div>
+    </div>
+     
+    <div class="agent flexS">
+    <div class="left-img">
+        <div class="img">
+            <img src="./images/crowd.png" alt="">
+        </div>
+        <div class="img">
+            <img src="./images/tree.png" alt="">
+        </div>
+        <div class="img">
+            <img src="./images/free2.png" alt="">
+        </div>
+    </div>
+    <div class="right-text ">
+        <a href="">
+            <div class="agent-items flexS">
+                <div class="a-i-2">
+                    推荐代理
+                </div>
+                <div class="a-i-3">
+                    <img src="./images/left-arrow .png" alt="">
+                </div>
+            </div>
+        </a>
+       
+        <div class="agent-items flexS">
+            <div class="a-i-2">
+                推荐代理树状图
+            </div>
+            <div class="a-i-3">
+                <img src="./images/left-arrow .png" alt="">
+            </div>
+        </div>
+        <div class="agent-items flexS">
+            <div class="a-i-2">
+                招募代理树状图
+            </div>
+            <div class="a-i-3">
+                <img src="./images/left-arrow .png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </body> 
+</body>
+</html>

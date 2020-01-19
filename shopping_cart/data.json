@@ -1,0 +1,257 @@
+{
+    "code":200,
+    "data":[
+        {  
+           "good_name":"休闲宽边魔法绒四件套",
+           "good_ID":"1",
+           "good_cover":"./images/87f89964895a6be841621e627a6c42a4.jpg",
+           "good_size":"xl",
+           "good_color":"深蓝",
+           "good_price":"79",
+           "good_number":"2",
+           "good_inventory":"432",
+           "Goods_details":[
+               {
+               "Goods_details_size":["x","l","XL","2XL"],
+               "Goods_details_color":[
+                   {
+                       "image":"./images/1575857557103831.jpg",
+                       "text":"宽边深咖"
+                   },
+                   {
+                    "image":"./images/1575857557135464.jpg",
+                    "text":" 宽边浅咖"
+                  },
+                  {
+                    "image":"./images/1575857557250703.jpg",
+                    "text":" 宽边亮黄"
+                  },
+                  {
+                    "image":"./images/1575857557373946.jpg",
+                    "text":" 宽边樱红"
+                  },
+                  {
+                    "image":"./images/1575857557714628.jpg",
+                    "text":" 宽边浅粉"
+                  },
+                  {
+                    "image":"./images/1575857557836925.jpg",
+                    "text":" 宽边浅绿"
+                  }
+               ]
+              }
+
+        ]
+        },
+        {
+            "good_name":"休闲宽边魔法绒四件套",
+           "good_ID":"2",
+           "good_cover":"./images/87f89964895a6be841621e627a6c42a4.jpg",
+            "good_size":"xl",
+            "good_color":"深蓝",
+            "good_price":"79",
+            "good_number":"2",
+            "good_inventory":"432",
+            "Goods_details":[
+                {
+                "Goods_details_size":["x","l","XL","2XL"],
+                "Goods_details_color":[
+                    {
+                        "image":"./images/1575857557103831.jpg",
+                        "text":"宽边深咖"
+                    },
+                    {
+                     "image":"./images/1575857557135464.jpg",
+                     "text":" 宽边浅咖"
+                   },
+                   {
+                     "image":"./images/1575857557250703.jpg",
+                     "text":" 宽边亮黄"
+                   },
+                   {
+                     "image":"./images/1575857557373946.jpg",
+                     "text":" 宽边樱红"
+                   },
+                   {
+                     "image":"./images/1575857557714628.jpg",
+                     "text":" 宽边浅粉"
+                   },
+                   {
+                     "image":"./images/1575857557836925.jpg",
+                     "text":" 宽边浅绿"
+                   }
+                ]
+               }
+ 
+         ]
+         },
+         {
+            "good_name":"休闲宽边魔法绒四件套",
+           "good_ID":"3",
+           "good_cover":"./images/87f89964895a6be841621e627a6c42a4.jpg",
+            "good_size":"xl",
+            "good_color":"深蓝",
+            "good_price":"79",
+            "good_number":"2",
+            "good_inventory":"432",
+            "Goods_details":[
+                {
+                "Goods_details_size":["x","l","XL","2XL"],
+                "Goods_details_color":[
+                    {
+                        "image":"./images/1575857557103831.jpg",
+                        "text":"宽边深咖"
+                    },
+                    {
+                     "image":"./images/1575857557135464.jpg",
+                     "text":" 宽边浅咖"
+                   },
+                   {
+                     "image":"./images/1575857557250703.jpg",
+                     "text":" 宽边亮黄"
+                   },
+                   {
+                     "image":"./images/1575857557373946.jpg",
+                     "text":" 宽边樱红"
+                   },
+                   {
+                     "image":"./images/1575857557714628.jpg",
+                     "text":" 宽边浅粉"
+                   },
+                   {
+                     "image":"./images/1575857557836925.jpg",
+                     "text":" 宽边浅绿"
+                   }
+                ]
+               }
+ 
+         ]
+         },
+         {
+            "good_name":"休闲宽边魔法绒四件套",
+            "good_ID":"4",
+            "good_cover":"./images/87f89964895a6be841621e627a6c42a4.jpg",
+            "good_size":"xl",
+            "good_color":"深蓝",
+            "good_price":"79",
+            "good_number":"2",
+            "good_inventory":"432",
+            "Goods_details":[
+                {
+                "Goods_details_size":["x","l","XL","2XL"],
+                "Goods_details_color":[
+                    {
+                        "image":"./images/1575857557103831.jpg",
+                        "text":"宽边深咖"
+                    },
+                    {
+                     "image":"./images/1575857557135464.jpg",
+                     "text":" 宽边浅咖"
+                   },
+                   {
+                     "image":"./images/1575857557250703.jpg",
+                     "text":" 宽边亮黄"
+                   },
+                   {
+                     "image":"./images/1575857557373946.jpg",
+                     "text":" 宽边樱红"
+                   },
+                   {
+                     "image":"./images/1575857557714628.jpg",
+                     "text":" 宽边浅粉"
+                   },
+                   {
+                     "image":"./images/1575857557836925.jpg",
+                     "text":" 宽边浅绿"
+                   }
+                ]
+               }
+ 
+         ]
+         },
+         {
+            "good_name":"休闲宽边魔法绒四件套",
+            "good_ID":"5",
+            "good_cover":"./images/87f89964895a6be841621e627a6c42a4.jpg",
+            "good_size":"xl",
+            "good_color":"深蓝",
+            "good_price":"79",
+            "good_number":"2",
+            "good_inventory":"432",
+            "Goods_details":[
+                {
+                "Goods_details_size":["x","l","XL","2XL"],
+                "Goods_details_color":[
+                    {
+                        "image":"./images/1575857557103831.jpg",
+                        "text":"宽边深咖"
+                    },
+                    {
+                     "image":"./images/1575857557135464.jpg",
+                     "text":" 宽边浅咖"
+                   },
+                   {
+                     "image":"./images/1575857557250703.jpg",
+                     "text":" 宽边亮黄"
+                   },
+                   {
+                     "image":"./images/1575857557373946.jpg",
+                     "text":" 宽边樱红"
+                   },
+                   {
+                     "image":"./images/1575857557714628.jpg",
+                     "text":" 宽边浅粉"
+                   },
+                   {
+                     "image":"./images/1575857557836925.jpg",
+                     "text":" 宽边浅绿"
+                   }
+                ]
+               }
+ 
+         ]
+         },
+         {
+            "good_name":"休闲宽边魔法绒四件套",
+            "good_ID":"6",
+            "good_cover":"./images/87f89964895a6be841621e627a6c42a4.jpg",
+            "good_size":"xl",
+            "good_color":"深蓝",
+            "good_price":"79",
+            "good_number":"2",
+            "good_inventory":"432",
+            "Goods_details":[
+                {
+                "Goods_details_size":["x","l","XL","2XL"],
+                "Goods_details_color":[
+                    {
+                        "image":"./images/1575857557103831.jpg",
+                        "text":"宽边深咖"
+                    },
+                    {
+                     "image":"./images/1575857557135464.jpg",
+                     "text":" 宽边浅咖"
+                   },
+                   {
+                     "image":"./images/1575857557250703.jpg",
+                     "text":" 宽边亮黄"
+                   },
+                   {
+                     "image":"./images/1575857557373946.jpg",
+                     "text":" 宽边樱红"
+                   },
+                   {
+                     "image":"./images/1575857557714628.jpg",
+                     "text":" 宽边浅粉"
+                   },
+                   {
+                     "image":"./images/1575857557836925.jpg",
+                     "text":" 宽边浅绿"
+                   }
+                ]
+               }
+ 
+         ]
+         }
+    ]
+}

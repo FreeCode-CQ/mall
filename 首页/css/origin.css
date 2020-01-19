@@ -1,0 +1,92 @@
+.index_icon{
+    position: relative;
+    margin: 20px 0;
+}
+.index_icon>div{
+    width: 100%;
+    position: absolute;
+    top: -21px;
+    z-index: 10;
+}
+.index_icon>div img{
+    width: 100%;
+}
+.index_icon>ul{
+    position: relative;
+    z-index: 20;
+}
+.index-img1{
+    width: 94%;
+    margin: 0px auto 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px -1px black;
+}
+.product_img1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: black;
+    padding: 14px;
+    line-height: 28px;
+}
+.product_img1 p{
+    letter-spacing: 3px;
+    font-size: 30px;
+        margin-left: 50%;
+transform: translate(-50%, -50%);
+}
+.product_img1 a{
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    left: -5px;
+    top: -16px;
+    color: red;
+}
+.topLogo{
+    text-align: center;
+    padding: 5px 0 10px;
+    position: absolute;
+    z-index: 11;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box{
+
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    /* padding-top: 15px; */
+}
+/* .swiper-wrapper img{
+    border-radius: 15px; 
+    width: 93%;
+    transform: translate(-50%, 0px);
+    position: relative;
+    left: 50%;
+    box-shadow: 0px 4px 19px -9px black;
+}*/
+.ward{
+    position: absolute;
+    top:-5px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sech{height:90px;width:100%;background-color:#fff}
+.sech .sech-one {
+width: 80%;
+border: solid 1px #ccc;
+padding-left: 10px;
+font-size: 22px;
+height: 60px;
+border-radius: 0px;
+-webkit-appearance: none;
+outline: none;
+}
+.sech-two div {
+line-height: 60px;
+margin: 0px 26px;
+}

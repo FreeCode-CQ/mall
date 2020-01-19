@@ -1,0 +1,430 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-22 09:55:20
+ * @LastEditTime : 2020-01-17 10:25:30
+ * @LastEditors  : 钟建坤
+ * @Description: In User Settings Edheaderit
+ * @FilePath: \多奇个人中心页面\index.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/rem.js"></script>
+    <style>
+        .header-1-1-img {
+            width: 1.4rem;
+            height: 1.4rem;
+            /* margin-bottom: 0px; */
+            margin-top: 2px;
+        }
+
+        .header-1-1-text {
+            margin-left: 4px;
+            line-height: 1.8rem;
+            font-size: 12px;
+        }
+
+        .header-1-1 {
+            margin-left: 0;
+        }
+
+        .header-1-2 {
+            margin-left: 0;
+        }
+
+        .header-1 {
+            width: auto;
+            margin-top: 4px;
+            justify-content: center;
+        }
+
+        .header-1>div {
+            display: flex;
+
+            width: auto;
+
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            text-align: center;
+            margin-right: 7%;
+            margin-left: 8%;
+        }
+
+        .Set-up-2 {
+            font-size: 12px;
+            left: 10px;
+            top: 1px;
+        }
+
+        .Set-up-bg-img-2 {
+            margin-top: 5px;
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        .o-t-2 {
+            display: flex;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            line-height: 38px;
+            font-size: 11px;
+            line-height: 31px;
+        }
+
+        .o-t-2-img {
+            width: 7px;
+            height: 14px;
+            margin-top: 9px;
+            margin-left: 5px;
+        }
+
+        .p-i-item-num {
+            font-size: 1.5rem;
+        }
+
+        .m-order {
+            height: auto;
+        }
+
+        .m-order {
+            padding-bottom: 10px;
+        }
+
+        .other {
+            height: auto;
+            padding-bottom: 10px;
+        }
+
+        .other,
+        .price-info,
+        .m-order {
+            border-radius: 7px;
+        }
+
+        .other-items-img img {
+            width: 2.3rem;
+            height: 2rem;
+        }
+
+        .bg-color {
+            /* background: #F3F3F3; */
+            height: auto;
+        }
+
+        .other-items-info {
+            font-size: 12px !important;
+            margin-top: 5px;
+        }
+
+        .o-o-i-info {
+            margin-top: 2px;
+        }
+
+        .o-o-i-img img {
+            width: 2.3rem;
+            height: 25px;
+        }
+
+        .o-t-1 {
+            font-size: 1.3rem;
+        }
+
+        .o-o-items {
+            position: relative;
+        }
+
+        .active-tag {
+            position: absolute;
+            right: 24%;
+            top: -6px;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+            background: orangered;
+            color: white;
+            border-radius: 50%;
+            /* font-size: 9px; */
+
+        }
+
+        .index-footer {
+            background: #fff;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            padding: 5px 0;
+            z-index: 9999;
+            line-height: 17px;
+        }
+
+        .index-footer ul a {
+            color: #333;
+        }
+
+        .index-footer ul li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .index-footer ul li img {
+            width: 19%;
+        }
+
+        .index-footer p {
+            font-size: 11px;
+        }
+
+        .on {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body class="bg-color">
+    <div class="header">
+        <div class="Set-up">
+            <div class="Set-up-bg">
+
+                <a href="__APP__/Agency/Index/center">
+                    <div class="Set-up-2">
+                        <img class="Set-up-bg-img-2" src="./assets/image/set2.png" alt="">
+                        <div class="Set-up-2-text">设置</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="portrait">
+            <div class="portrait-box">
+                <div class="portrait-1"><img style="width: 100%;" src="./assets/image/portrait_zjk.jpg"></div>
+                <div class="nickname">广州得翼</div>
+            </div>
+
+        </div>
+
+        <!-- <if condition="$manager['level'] neq 99"> -->
+        <div class="header-1">
+            <div class="header-1-1">
+                <a href="__APP__/Home/Manager/detail/?id={$manager.id}">
+                    <div style="display: flex; padding: 1px 5px;">
+                        <img class="header-1-1-img" src="./assets/image/check.png" alt="">
+                        <div class="header-1-1-text">授权查看</div>
+                    </div>
+                </a>
+            </div>
+            <div class="header-1-2">
+                <a href="__APP__/Agency/Share/create" class="pink">
+                    <div style="display: flex;padding: 1px 5px;">
+                        <img class="header-1-1-img" src="./assets/image/recruit.png" alt="">
+                        <div class="header-1-1-text">会员招募</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- </if> -->
+    </div>
+
+    <div class="price-info">
+        <div class="p-i-item">
+            <div class="p-i-item-num">
+                0.00
+            </div>
+            <div class="p-i-item-text">
+                余额
+            </div>
+        </div>
+        <div class="p-i-item">
+            <div class="p-i-item-num">
+                0
+            </div>
+            <div class="p-i-item-text">
+                奖金
+            </div>
+        </div>
+        <div class="p-i-item">
+            <div class="p-i-item-num">
+                0
+            </div>
+            <div class="p-i-item-text">
+                上级
+            </div>
+        </div>
+        <div class="p-i-item">
+            <div class="p-i-item-num">
+                总部
+            </div>
+            <div class="p-i-item-text">
+                推荐人
+            </div>
+        </div>
+    </div>
+    <div class="m-order">
+        <div class="order-title">
+            <div class="o-t-1">
+                我的订单
+            </div>
+            <a href="../个人中心详情页修改/订单页面/index.html">
+            <div class="o-t-2">
+                查看全部订单<img class="o-t-2-img" src="./assets/image/箭头.png" alt="">
+            </div>
+            </a>
+
+        </div>
+        <div class="order-options">
+            <div class="o-o-items">
+                <div class="o-o-i-img">
+                    <img src="./assets/image/待审核.png" alt="">
+                </div>
+                <div class="o-o-i-info">
+                    待审核
+                </div>
+            </div>
+            <div class="o-o-items">
+                <div class="o-o-i-img">
+                    <img src="./assets/image/已审核.png" alt="">
+                </div>
+                <div class="o-o-i-info">
+                    已审核
+                </div>
+            </div>
+            <div class="o-o-items">
+                <div class="o-o-i-img">
+                    <img src="./assets/image/已发货.png" alt="">
+                </div>
+                <div class="o-o-i-info">
+                    已发货
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="other">
+        <div class="other-items">
+            <a href="../个人中心详情页修改/个人资料/index.html">
+                <div class="other-items-img">
+                    <img src="./assets/image/个人资料.png" alt="">
+                </div>
+                <div class="other-items-info">
+                    个人资料
+                </div>
+            </a>
+
+        </div>
+
+        <!-- -------- -->
+        <div class="other-items">
+            <a href="">
+                <div class="other-items-img">
+                    <img src="./assets/image/我的钱包.png" alt="">
+                </div>
+                <div class="other-items-info">
+                    我的钱包
+                </div>
+            </a>
+
+        </div>
+        <!-- ------------------- -->
+        <div class="other-items">
+            <a href="../个人中心详情页修改/订单图表/index.html">
+                <div class="other-items-img">
+                    <img src="./assets/image/订单图标图表.png" alt="">
+                </div>
+                <div class="other-items-info">
+                    订单图表
+                </div>
+            </a>
+
+        </div>
+        <!-- --------------------------------------------- -->
+        <div class="other-items">
+            <a href="../个人中心详情页修改/代理查看/index.html">
+                <div class="other-items-img">
+                    <img src="./assets/image/代理查看icon.png" alt="">
+                </div>
+                <div class="other-items-info">
+                    代理查看
+                </div>
+            </a>
+
+        </div>
+        <!-- ------------------------ -->
+        <div class="other-items">
+            <div class="other-items-img">
+                <img src="./assets/image/下级管理.png" alt="">
+            </div>
+            <div class="other-items-info">
+                下级管理
+            </div>
+        </div>
+        <!-- -------------------------------- -->
+        <div class="other-items">
+            <div class="other-items-img">
+                <img src="./assets/image/奖金详情.png" alt="">
+            </div>
+            <div class="other-items-info">
+                奖金详情
+            </div>
+        </div>
+    </div>
+    <footer class="index-footer">
+        <ul>
+            <a href="../首页/index.html ">
+                <li>
+                    <img src="./assets/image/footer_icon1.png" alt="">
+                    <p>首页</p>
+                </li>
+            </a>
+            <a href="../分类页面功能/index.html">
+                <li>
+                    <img src="./assets/image/footer_icon2.png" alt="">
+                    <p>分类</p>
+                </li>
+            </a>
+            <a href="../shopping_cart/index.html">
+                <li>
+                    <img src="./assets/image/footer_icon3.png" alt="">
+                    <p>购物车</p>
+                </li>
+            </a>
+            <a href="../个人中心/index.html" class="on">
+                <li>
+                    <img src="./assets/image/footer_icon4_4.png" alt="">
+                    <p>个人中心</p>
+                </li>
+            </a>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function () {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 10 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+
+        }(document, window));
+    </script>
+</body>
+
+</html>

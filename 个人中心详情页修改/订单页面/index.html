@@ -1,0 +1,142 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: 钟建坤
+ * @Date: 2020-01-08 10:05:08
+ * @LastEditors  : 钟建坤
+ * @LastEditTime : 2020-01-17 10:31:13
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div class="title" >
+        <a href="javascript:history.go(-1)">
+             <div class="arrow_right">
+            <img src="./images/arrow_right_2.png" alt="">
+        </div>
+        </a>
+       
+        
+        <div class="title_name">
+            <div class="search">
+                <input type="text" placeholder="订单编号/下单手机号码/收货人名称"> 
+                <div class="search-icom">
+                    <img src="./images/search.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ 
+    <div class="tabs flexS">
+       
+            <div class="tabs-items active">全部</div>
+            <div class="tabs-items">待支付</div>
+            <div class="tabs-items">待发货</div>
+            <div class="tabs-items">待收货</div>
+            <div class="tabs-items">退换货</div>
+        
+    </div>
+
+    <div class="ordr_container">
+       <div class="order-items">
+           <div class="order-cover">
+               <img src="./images/iphome.jpg" alt="">
+           </div>
+           <div class="order-content">
+               <div class="o-c-1 flexS">
+                   <div class="o-c-1-1">
+                       广州得翼专属iphome11
+                   </div>
+                   <div class="o-c-1-2">
+                       待支付
+                   </div>
+               </div>
+               <div class="o-c-2 flexS">
+                   <div class="o-c-2-1">XS</div>
+                   <div class="o-c-2-2">200*200</div>
+                   <div class="o-c-2-2=3">深黄色</div>
+               </div>
+               <div class="o-c-3 flexS">
+                   <div class="o-c-3-1 flexS">
+                       <div>单价:</div>
+                       <div>￥209.00</div>
+                   </div>
+                   <div class="o-c-3-2 flexS">
+                    <div>数量:</div>
+                    <div>x 1</div>
+                </div>
+               </div>
+           </div>
+           <div class="order-price">
+               <div class="order-num">
+                   <div class="o-n-1">共 <span>1</span> 件,订单总价：￥10000.00<span></span></div>
+               </div>
+               <div class="order-data">
+                <div class="o-n-2">2019-12-26 17:26:47</div>
+            </div>
+           </div>
+       </div>
+
+
+       <div class="order-items">
+        <div class="order-cover">
+            <img src="./images/iphome.jpg" alt="">
+        </div>
+        <div class="order-content">
+            <div class="o-c-1 flexS">
+                <div class="o-c-1-1">
+                    广州得翼专属iphome11
+                </div>
+                <div class="o-c-1-2">
+                    待支付
+                </div>
+            </div>
+            <div class="o-c-2 flexS">
+                <div class="o-c-2-1">XS</div>
+                <div class="o-c-2-2">200*200</div>
+                <div class="o-c-2-2=3">深黄色</div>
+            </div>
+            <div class="o-c-3 flexS">
+                <div class="o-c-3-1 flexS">
+                    <div>单价:</div>
+                    <div>￥209.00</div>
+                </div>
+                <div class="o-c-3-2 flexS">
+                 <div>数量:</div>
+                 <div>x 1</div>
+             </div>
+            </div>
+        </div>
+        <div class="order-price">
+            <div class="order-num">
+                <div class="o-n-1">共 <span>1</span> 件,订单总价：￥10000.00<span></span></div>
+            </div>
+            <div class="order-data">
+             <div class="o-n-2">2019-12-26 17:26:47</div>
+         </div>
+        </div>
+    </div>
+    </div>
+
+
+     <script src="./js/jquery-1.7.2.min.js"></script>
+    <script>
+        $('.tabs > div').click(function(){
+            
+             $(this).addClass('active').siblings('div').removeClass('active');
+            //  var index = $(this).index();   
+            //  $('.tab').eq(index).addClass('selected').siblings('div').removeClass('selected');
+        })
+     
+    </script>
+</body>
+</html>
